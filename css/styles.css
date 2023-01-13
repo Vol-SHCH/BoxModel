@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&family=Roboto&display=swap');
+
+@import url(./weather-icons-wind.css);
+@import url(./weather-icons-wind.min.css);
+@import url(./weather-icons.css);
+@import url(./weather-icons.min.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,body {
+    min-height: 100vh;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+   
+}
+body{
+    background-color: #3399CC;
+    border: 25px solid #2B81AC;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,h4 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+i {
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'Weathericons';
+}
+
+/* ------------------HEADER-------------------- */
+
+.header {
+    margin: 41px 0 38px 0;
+}
+
+.header__title {
+    font-size: 22px;
+}
+
+/* ------------------Weather block--------------------- */
+.main__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    /* min-height: 592px; */
+    width: 100%;
+    border: 2px solid #ffffff;
+    margin-bottom: 35px;
+    background: rgba(131, 116, 116, 0.9);
+}
+
+.main__container:hover {  
+    background: rgba(131, 116, 116, 0.1);
+}
+
+.cities__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+}
+.list__title {
+    margin-bottom:4px;
+}
+.cities__list li {
+    border: 2px solid #ffffff;
+    padding: 26px 0 27px 0;
+    opacity: 0.7;
+}
+
+.cities__list li:hover {
+    opacity: 1;
+}
+
+.cities__list div {
+    text-align: center;
+    height: 92px;
+}
+
+.list__grow {
+    flex-basis: 50%;
+}
+
+.list__grow:last-of-type {
+    flex-basis: 100%;
+}
+
+.list__1, 
+.list__2 {
+    flex-basis: 25%;
+}
+
+/* -------------------COLORS--------------------- */
+
+.lisbon {background: #43b1e7;
+}
+.paris {background: #33CCCC;
+}
+.belgrade{background: #996699;
+}
+.venice {background: #C24747;
+}
+.tel-avive {background: #E2674A;
+}
+.cair {background: #FFCC66;
+}
+.new-york {background:#99CC99;    
+}
+.new-delhi {background: #669999;
+}
+.san {background: #CC6699;
+}
+.tokyo {background: #339966;
+}
+.sydney {background: #666699;
+}
+
+
+/* ---------------------FOOTER----------------------- */
+
+.footer {
+    margin-bottom: 94px;
+}
+
+.footer__whish {
+    display: block;
+    font-size: 16px;
+    margin:0;
+}
